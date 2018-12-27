@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div{
+	/* 设置元素的宽高  */
+		width: 600px;
+		height: 600px;
+		background-color: yellow;
+		/* 设置背景图片  
+		如果图片尺寸小于元素的尺寸
+		则会自动重复平铺 
+		*/
+		background-image: url("../b.png");
+		background-size :503px 274px;
+		/* 禁止重复  */
+		background-repeat: no-repeat;
+		/* 1：横向位置 left/center/right左中右
+		   2：纵向位置 top/center/bottom上中下
+		   可以实现9宫格的9个位置 
+		 */
+/* 		background-position: center center; */
+		/* 通过百分比控制位置
+		第一个参数0代表左边缘 100%代表右边缘
+		第二个参数0代表上边缘 100%代表下边缘
+		 */
+		background-position: 50% 50%;
+	}
+</style>
+</head>
+<body>
+<div>div1</div>
+</body>
+</html>

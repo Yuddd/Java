@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#d1{
+		width: 100px;
+		height: 100px;
+		/* 给某个方向外边距单独赋值 */
+		background-color: red;
+		/* margin-top: 20px;
+		margin-left: 20px;
+		margin-bottom: 10px;
+		margin-right: 20px; */
+		/* 批量赋值外边距 */
+		/* margin: 30px; *//* 四个方向全是30 */
+		/* margin: 10px 30px; *//* 上下10 左右30 */
+		/* margin: 0 auto; *//* 水平居中 */
+		margin: 10px 20px 30px 40px;/* 上右下左 顺时针 */
+		overflow: hidden;/*解决粘连问题 */
+	}
+	body{
+		border: 1px solid blue;
+		margin-left: 20px;
+	}
+	#small{
+		width: 50px;
+		height: 50px;
+		background-color: green;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+</style>
+</head>
+<body>
+ 	<div id="d1">
+ 	<div id="small"></div>
+ 	</div>
+ 	<div id="d2">div2</div>
+</body>
+</html>

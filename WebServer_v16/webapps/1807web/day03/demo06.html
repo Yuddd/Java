@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div>span{
+		background-color: red;
+	}
+	body>span{
+		background-color: green;
+	}
+	body h3{
+		background-color: yellow;
+	}
+	body p{
+		background-color: yellow;
+	}
+	#p{
+		background-color: blue;
+	}
+	body>p{
+		color: yellow;
+	}
+	/* 分组选择器 可以把多个选择器合并成一个  */
+	.a,.b,#p,h4{
+		border: 1px solid black;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<span>
+			<a href="#">超链接1</a>
+		</span>
+	</div>
+	<span>
+		<a href="#">超链接2</a>
+	</span>
+	<h3 class="a">我是h3</h3>
+	<h4>我是h4</h4>
+	<p class="b">这是个p</p>
+	<p id="p">这是个p2</p>
+<!-- 超链接1 背景红色 超链接2 背景绿色
+h3和p1 背景黄色 p2 背景蓝色  p1和p2字体黄色
+ -->
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#a{
+		width: 300px;
+		height: 300px;
+		background-image: url("../b.png");
+		background-size:300px 300px;
+	}
+	#b{
+		width: 500px;
+		height: 500px;
+		background-color: red;
+		background-image: url("../b.png");
+		background-size:100px 100px;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	#c{
+		width: 200px;
+		height: 200px;
+		background-color: green;
+		background-image: url("../b.png");
+		background-size:100px 100px;
+		background-repeat: no-repeat;
+		background-position: 0% 100%;
+	}
+	span{
+		background-color: blue;
+		/* 行内元素宽高是包裹内容的，不能直接修改 。  */
+		width: 100px;
+		height: 500px;
+	}
+	
+</style>
+</head>
+<body>
+<span>我是span</span>
+<div id="a">1</div>
+<div id="b">2</div>
+<div id="c">3</div>
+</body>
+</html>

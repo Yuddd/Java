@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	/* 子孙选择器  */
+	div span a{
+		background-color: red;
+	}
+	/* 空格 任意级  */
+	div a{
+		color: pink;
+	}
+	/* >下一级 */
+	div>a{
+		border: 1px solid yellow;
+	}
+	/* 选中第一级  */
+	body>ul>li{
+		color: red;
+	}
+	/* 选中第二级  */
+	ul>ul>li{
+		color: green;
+	}
+</style>
+</head>
+<body>
+<div>
+<span>
+	<a href="#">超链接1</a>
+</span>
+	<a href="#">超链接2</a>
+</div>
+	<a href="#">超链接3</a>
+	<span>	<a href="#">超链接4</a></span>
+	
+	<ul>
+	<li>凉菜</li>
+		<ul>
+	<li>卤鸡爪</li>
+	<li>拌黄瓜</li>
+	</ul>
+	<li>炖菜</li>
+	<ul>
+	<li>千页豆腐</li>
+	<li>大闸蟹</li>
+	</ul>
+	</ul>
+</body>
+</html>

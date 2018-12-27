@@ -1,0 +1,9 @@
+利用反射机制加载Servlet来解决添加不同业务时每次对ClientHandler的修改。
+
+思路：
+我们设计一个Map，key保存请求路径，value保存对应的Servlet的名字。然后ClientHandler在得到一个请求路径后先作为key
+在该Map中查看是否对应Servlet若是则获取该Servlet的名字，利用反射机制加载这个类并实例化，然后调用其service方法进行处理。
+
+而这个Map的数据可以来源于一个xml文件。从而做到请求与对应Servlet可以进行配置。
+
+重构WebServer类，使用线程池来管理处理客户端请求的ClientHandler。

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div{
+		width: 100px;
+		height: 100px;
+		background-color:rgba(0,255,255,0.5);
+		/* 内边距会影响元素的宽高  */
+		padding-left: 20px;
+		padding-top: 20px;
+		padding: 10px;/* 四个边的内边距都是10px */
+		padding: 10px 20px;/* 上下10左右20 */
+		padding: 10px 20px 30px 40px;/* 上右下左顺时针  */
+	}
+	#s2{
+		border: 1px solid rgba(255,0,0,0.6);
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 20px;
+	}
+</style>
+</head>
+<body>
+<div>div1</div>
+<span>span1</span><span id="s2">span2</span><span>span3</span>
+<div>div2</div>
+</body>
+</html>

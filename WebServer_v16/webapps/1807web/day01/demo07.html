@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- #代表当前页面 -->
+	<img  src="../abc/c.jpg"  width="1000px" usemap="#mymap">
+	<!-- 为了解决兼容性问题name和id都写上 -->
+	
+	<map name="mymap" id="mymap">
+	<!-- shape: 形状 rect(矩形)/circle(圆形) -->
+	<!-- coords:如果是矩形 需要四个值 表示两个对角线点的坐标,如果是圆形需要三个值 前两个代表圆心坐标 第三个值表示半径
+	href:路径,可以指向页面地址，还可以指向文件,如果此文件可以直接打开则直接浏览 如果打不开则下载此文件
+	 -->
+	<area shape="rect" coords="0,0,100,200" href="2.gif">
+	<area shape="circle" coords="500,300,50" href="http://www.tmooc.cn">
+	<area shape="circle" coords="500,500,50" href="迪丽热巴.ssf">
+	</map>
+</body>
+</html>

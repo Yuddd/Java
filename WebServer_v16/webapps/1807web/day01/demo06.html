@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- alt:如果图片不能正常显示时 显示此内容 
+src:路径  
+ 相对路径：1.图片和页面在同一目录 直接写图片名(后缀）
+ 		   2.图片在页面的上级目录  ../图片名
+ 		   3.图片在页面的下级目录  文件名/图片名
+ 绝对路径：以http开头  如果访问站内资源使用相对路径   如果访问站外资源使用绝对路径,
+ 访问站外资源如果人家网站路径改变 则不能正常显示
+-->
+<!-- 支持的图片格式:
+1.jpg/jpeg
+2.png 支持透明色
+3.gif动图
+title:鼠标悬停时显示的内容
+width/height:两种赋值方式 1.像素 2.百分比
+如果只设置宽度 则高度会根据原始宽高比自动缩放
+ -->
+<img width="200px" height="100px" alt="企鹅图片" title="这是企鹅" src="a.jpg"><br>
+<img width="50%" alt="" src="../b.png"><br>
+<img alt="" src="cde/n.jpg"><br>
+<img alt="" src="../abc/c.jpg"><br>
+<img alt="图片" src="http://cdn.tmooc.cn/tmooc-web/imgad/2018/8/7//ECC4CD1E8100455E9D2C04E02EFB84EA.jpg"><br>
+<img alt="" src="2.gif">
+
+</body>
+</html>

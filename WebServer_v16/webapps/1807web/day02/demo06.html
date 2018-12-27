@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- action提交的地址 -->
+	<form action="http://www.tmooc.cn">
+	<!-- value:添加文本框默认值 
+	placeholder:占位文本	
+	-->
+		<input type="text" name="username" value="请输入名字" placeholder="用户名" maxlength="10" readonly="readonly"><br>
+		<input type="password" name="password" >
+		<hr>
+		<!-- 单选 -->
+		性别:
+		<input checked="checked" type="radio" name="gender" id="men" value="men"><label for="men" >男</label>
+		<input type="radio" name="gender" id="women" value="women"><label for="women">女</label>
+		<input type="radio" name="gender" id="bt" value="bt"><label for="bt">变态</label>
+		<hr>
+		爱好:
+		<input	checked="checked" type="checkbox" name="hobby" id="basketball" value="basketball">
+		<label for="basketball">篮球</label>
+		<input checked="checked" type="checkbox" name="hobby" id="fishing" value="fishing">
+		<label  for="fishing">钓鱼</label>
+		<input type="checkbox" name="hobby" id="nongyao" value="nongyao">
+		<label for="nongyao">王者农药</label>
+		<input type="checkbox" name="hobby" id="happy" value="happy">
+		<label for="happy">泡妞</label>
+		<hr>
+		生日:<input type="date" name="birthday" value="birthday">
+		<hr>
+		靓照:
+		<input type="file" name="photo">
+		<hr>
+		个人介绍:
+		<textarea rows="3" cols="20" name="des">这家伙很懒，什么也没留下!</textarea>
+		<hr>
+		出生地:
+		<select name="BirthPlace">
+		<option>请选择</option>
+		<option value="bj">北京</option>
+		<option value="sh">上海</option>
+		<option value="gz">广州</option>
+		<option selected="selected" value="yx">宜兴</option>
+		</select>
+		<!-- 隐藏域 
+		不需要给用户看
+		-->
+		<input type="hidden" name="aaa" value="bbb">
+		<input type="submit" value="注册" >
+		<input type="reset" >
+		<input type="button" value="自定义按钮">
+		</form>
+</body>
+</html>
